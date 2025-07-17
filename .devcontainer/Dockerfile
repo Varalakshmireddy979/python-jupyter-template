@@ -1,2 +1,22 @@
 ARG VARIANT="3.10"
 FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
+import matplotlib.pyplot as pyplot
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+plt.plot(x, y)
+plt.title('Simple plot')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
